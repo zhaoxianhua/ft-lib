@@ -27,7 +27,7 @@ func SendMail(email MailConfig) {
 	d := gomail.NewDialer(email.Host, email.Port, email.Username, email.Password)
 	d.TLSConfig = &tls.Config{InsecureSkipVerify: true, ServerName: d.Host}
 	if err := d.DialAndSend(m); err != nil {
-		logx.Errorf("send mail failed, destMail:%s, err:%v", destMail, err)
+
 	} else {
 		os.Remove(email.AttachPath)
 	}

@@ -1,4 +1,4 @@
-package mysql
+package postgre
 
 import (
 	"fmt"
