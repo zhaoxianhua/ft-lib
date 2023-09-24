@@ -1,3 +1,3 @@
-module github.com/zhaoxianhua/ft-lib/conn/kafka
+module github.com/zhaoxianhua/ft-lib/kafka
 
 go 1.18
